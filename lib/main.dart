@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
+      title: "ToDo List",
       theme: ThemeData(
           brightness: Brightness.light,
           primaryColor: Colors.blue,
@@ -14,16 +15,16 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  List todos = List.empty();
+  List<String> todos = ["Item1", "Item2", "Item3"];
   String input = "";
 
   @override
   void initState() {
     super.initState();
-    todos.add("Item1");
-    todos.add("Item2");
-    todos.add("Item3");
-    todos.add("Item4");
+    // todos.add("Item1");
+    // todos.add("Item2");
+    // todos.add("Item3");
+    // todos.add("Item4");
   }
 
   @override
